@@ -7,7 +7,11 @@ spring:
       server:
         git:
           uri: https://github.com/cyp0/microservices-test.git
-          searchPaths: config-data
+          searchPaths:
+            - '{customer-service}'
+            - '{product-service}'
+            - '{shopping-service}'
+            - config-data
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
   security:

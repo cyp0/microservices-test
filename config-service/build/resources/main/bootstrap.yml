@@ -5,11 +5,8 @@ spring:
   cloud:
     config:
       server:
-        git:
-          uri: https://github.com/cyp0/microservices-test.git
-          searchPath: config-data
-          username: ${GIT_USER}
-          password: ${GIT_PASSWORD}
+        native:
+          search-locations: "C:\Users\Cypo\Desktop\microservices\config-data"
   security:
     user:
       name: root
