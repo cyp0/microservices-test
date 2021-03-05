@@ -6,7 +6,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/cyp0/microservices-test.git
+          uri: https://github.com/cyp0/microservices-test
           searchPaths:
             - '{customer-service}'
             - '{product-service}'
@@ -14,4 +14,7 @@ spring:
             - config-data
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
-  
+  security:
+    user:
+      name: name
+      password: password
